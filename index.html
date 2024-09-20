@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+    main {
+      padding: 1em;
+    }
+    section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1em;
+      padding: 1em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 0.5em;
+      font-weight: bold;
+    }
+    input[type="number"] {
+      margin-bottom: 1em;
+      padding: 0.5em;
+      font-size: 1em;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      padding: 0.5em;
+      font-size: 1em;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 1em;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Unit Converter</h1>
+  </header>
+  <main>
+    <!-- Length Converter -->
+    <section id="length-converter">
+      <h2>Length Converter</h2>
+      <form id="length-form">
+        <label for="inches">Inches:</label>
+        <input type="number" id="inches" placeholder="Enter inches" step="any">
+        <button type="submit" data-conversion="to-metric">Convert to Centimeters</button>
+        <label for="centimeters">Centimeters:</label>
+        <input type="number" id="centimeters" readonly step="any">
+      </form>
+    </section>
+
+    <!-- Weight Converter -->
+    <section id="weight-converter">
+      <h2>Weight Converter</h2>
+      <form id="weight-form">
+        <label for="pounds">Pounds:</label>
+        <input type="number" id="pounds" placeholder="Enter pounds" step="any">
+        <button type="submit" data-conversion="to-metric">Convert to Kilograms</button>
+        <label for="kilograms">Kilograms:</label>
+        <input type="number" id="kilograms" readonly step="any">
+      </form>
+    </section>
+
+    <!-- Temperature Converter -->
+    <section id="temperature-converter">
+      <h2>Temperature Converter</h2>
+      <form id="temperature-form">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit" step="any">
+        <button type="submit" data-conversion="to-celsius">Convert to Celsius</button>
+        <label for="celsius">Celsius:</label>
+        <input type="number" id="celsius" readonly step="any">
+      </form>
+    </section>
+
+    <!-- Area Converter -->
+    <section id="area-converter">
+      <h2>Area Converter</h2>
+      <form id="area-form">
+        <label for="square-feet">Square Feet:</label>
+        <input type="number" id="square-feet" placeholder="Enter square feet" step="any">
+        <button type="submit" data-conversion="to-metric">Convert to Square Meters</button>
+        <label for="square-meters">Square Meters:</label>
+        <input type="number" id="square-meters" readonly step="any">
+      </form>
+    </section>
+
+    <!-- Speed Converter -->
+    <section id="speed-converter">
+      <h2>Speed Converter</h2>
+      <form id="speed-form">
+        <label for="miles-per-hour">Miles per Hour:</label>
+        <input type="number" id="miles-per-hour" placeholder="Enter mph" step="any">
+        <button type="submit" data-conversion="to-metric">Convert to Kilometers per Hour</button>
+        <label for="kilometers-per-hour">Kilometers per Hour:</label>
+        <input type="number" id="kilometers-per-hour" readonly step="any">
+      </form>
+    </section>
+
+    <!-- Volume Converter -->
+    <section id="volume-converter">
+      <h2>Volume Converter</h2>
+      <form id="volume-form">
+        <label for="liters">Liters:</label>
+        <input type="number" id="liters" placeholder="Enter liters" step="any">
+        <button type="submit" data-conversion="to-gallons">Convert to Gallons</button>
+        <label for="gallons">Gallons:</label>
+        <input type="number" id="gallons" readonly step="any">
+      </form>
+    </section>
+
+    <!-- Currency Converter -->
+    <section id="currency-converter">
+      <h2>Currency Converter</h2>
+      <form id="currency-form">
+        <label for="usd">USD:</label>
+        <input type="number" id="usd" placeholder="Enter USD" step="any">
+        <button type="submit" data-conversion="to-eur">Convert to EUR</button>
+        <label for="eur">EUR:</label>
+        <input type="number" id="eur" readonly step="any">
+      </form>
+    </section>
+
+    <!-- Time Converter -->
+    <section id="time-converter">
+      <h2>Time Converter</h2>
+      <form id="time-form">
+        <label for="hours">Hours:</label>
+        <input type="number" id="hours" placeholder="Enter hours" step="any">
+        <button type="submit" data-conversion="to-minutes">Convert to Minutes</button>
+        <label for="minutes">Minutes:</label>
+        <input type="number" id="minutes" readonly step="any">
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

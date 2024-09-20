@@ -1,0 +1,118 @@
+/* General body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #80deea); /* Gradient background */
+  color: #333; /* Dark gray text */
+}
+
+/* Header styles */
+header {
+  background: #00796b; /* Solid teal background */
+  color: #fff; /* White text */
+  padding: 1.5em 2em; /* Adjusted padding */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #004d40; /* Dark teal border at the bottom */
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+/* Section styles */
+section {
+  background: #ffffff; /* White background for sections */
+  padding: 1.5em 2em; /* Adjusted padding */
+  margin-bottom: 1.5em;
+  width: 100%;
+  max-width: 600px; /* Adjusted width */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid #ddd; /* Light gray border */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+section:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 0 0 1em;
+  color: #004d40; /* Dark teal color for subheadings */
+  font-weight: 500;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/* Label styles */
+label {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #555; /* Medium gray for labels */
+}
+
+/* Input field styles */
+input[type="number"] {
+  width: 100%;
+  height: 2.8em;
+  padding: 0.5em;
+  border: 1px solid #b0bec5; /* Light gray border */
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #00796b; /* Teal border on focus */
+  outline: none;
+}
+
+/* Button styles */
+button[type="submit"] {
+  background-color: #004d40; /* Dark teal background */
+  color: #fff; /* White text */
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #00796b; /* Teal background on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  main {
+    padding: 1em;
+  }
+
+  section {
+    width: 90%;
+  }
+}
